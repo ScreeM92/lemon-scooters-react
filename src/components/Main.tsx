@@ -4,17 +4,6 @@ import { Home } from './Home';
 import { DataGrid} from './DataGrid';
 
 export const Main: React.FunctionComponent = () => {
-  const ridesColumns = [
-    { name: 'number', title: '#' },
-    { name: 'customerId', title: 'Customer Id' },
-    { name: 'startTime', title: 'Start Time' },
-    { name: 'endTime', title: 'End Time' },
-    { name: 'zone', title: 'Zone' },
-    { name: 'fileName', title: 'File Name' },
-    { name: 'price', title: 'Price' },
-    { name: 'currency', title: 'Currency' },
-    { name: 'minutes', title: 'Minutes' }
-  ];
   const errorsColumns = [
     { name: 'number', title: '#' },
     { name: 'customerId', title: 'Customer Id' },
@@ -23,6 +12,13 @@ export const Main: React.FunctionComponent = () => {
     { name: 'zone', title: 'Zone' },
     { name: 'fileName', title: 'File Name' }
   ];
+  const ridesColumns = [
+    ...errorsColumns,
+    { name: 'price', title: 'Price' },
+    { name: 'currency', title: 'Currency' },
+    { name: 'minutes', title: 'Minutes' }
+  ];
+  
 
   return (
     <main>
