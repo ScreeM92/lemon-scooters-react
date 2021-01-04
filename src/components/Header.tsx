@@ -11,6 +11,7 @@ export const Header: React.FunctionComponent = () => {
                     <li><Link to='/'>Home</Link></li>
                     <li><Link to='/rides'>Rides</Link></li>
                     <li><Link to='/errors'>Errors</Link></li>
+                    <li><Link to='/customers'>Customers</Link></li>
                 </ul>
             </nav>
         </header>   
