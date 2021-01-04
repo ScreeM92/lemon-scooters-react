@@ -22,7 +22,7 @@ export const Main: React.FunctionComponent = () => {
   const customerColumns = [
     { name: 'number', title: '#' },
     { name: 'customerId', title: 'Customer Id' },
-    { name: 'price', title: 'Price' },
+    { name: 'price', title: 'Expenses' },
     { name: 'ridesCount', title: 'Rides Count' },
   ]
 
